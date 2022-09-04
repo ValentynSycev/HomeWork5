@@ -49,7 +49,7 @@
     <section class="section-title">
         <div class="container">
             <h1 class="heading">Ефективні рішення для вашого бізнесу</h1>
-            <button class="modal-open-btn" type="button">Замовити послугу</button>
+            <button class="modal-open-btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
     </section>
     <!-- =========preference========= -->
@@ -102,14 +102,15 @@
             <h2 class="headline">Чим ми займаємося</h2>
             <ul class="list work-container">
                 <li class="page-item">
-                    <img class="page" src="./imeges/box1.jpg" alt="Розробка дизайну"
-                    width="370"
-                    height="294">
+                    <p class="overlay-page-item">Десктопні додатки</p>
+                    <img class="page" src="./imeges/box1.jpg" alt="Розробка дизайну">
                 </li>
                 <li class="page-item">
+                    <p class="overlay-page-item">Мобільні додатки</p>
                     <img class="page" src="./imeges/box2.jpg" alt="Тестування на різних пристроях">
                 </li>
                 <li class="page-item">
+                    <p class="overlay-page-item">Дизайнерські рішення</p>
                     <img class="page" src="./imeges/box3.jpg" alt="Підбір палітри">
                 </li>
             </ul>
@@ -382,5 +383,18 @@
         </div>
     </div>
    </footer>
+
+   <!-- ============modal========== -->
+   <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+            <svg class="modal-close-icon">
+                <use href="./imeges/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+   </div>
+
+   <script src="./js/modal.js"></script>
 </body>
 </html>
